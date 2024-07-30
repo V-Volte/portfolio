@@ -1,2 +1,154 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="background">
+	<div class="svgs">
+		<svg
+			width="1512"
+			height="753"
+			viewBox="0 0 1512 753"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<g filter="url(#filter0_f_308_2)">
+				<ellipse cx="345.5" cy="405.464" rx="207.5" ry="197.5" fill="url(#paint0_radial_308_2)" />
+			</g>
+			<g filter="url(#filter1_f_308_2)">
+				<path
+					d="M1005 134.964C981.5 126.797 869.1 84.0639 839.5 176.464C787.5 157.464 727.5 251.664 821.5 372.464C939 523.464 921.5 327.464 1146 361.464C1370.5 395.464 1097 609.464 1213 568.964C1305.8 536.564 1270.5 584.964 1374 372.464L1253.5 187.464H1183V319.964H1020L1038.5 257.464L1084.5 228.964L1005 134.964Z"
+					fill="#001974"
+				/>
+			</g>
+			<defs>
+				<filter
+					id="filter0_f_308_2"
+					x="-12"
+					y="57.9639"
+					width="715"
+					height="695"
+					filterUnits="userSpaceOnUse"
+					color-interpolation-filters="sRGB"
+				>
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+					<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_308_2" />
+				</filter>
+				<filter
+					id="filter1_f_308_2"
+					x="622.162"
+					y="-32"
+					width="901.838"
+					height="756.042"
+					filterUnits="userSpaceOnUse"
+					color-interpolation-filters="sRGB"
+				>
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+					<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_308_2" />
+				</filter>
+				<radialGradient
+					id="paint0_radial_308_2"
+					cx="0"
+					cy="0"
+					r="1"
+					gradientUnits="userSpaceOnUse"
+					gradientTransform="translate(345.5 405.464) rotate(90) scale(197.5 207.5)"
+				>
+					<stop stop-color="#0074B6" />
+					<stop offset="0.56" stop-color="#5D00BA" stop-opacity="0.25" />
+					<stop offset="1" stop-color="#7B00B5" stop-opacity="0" />
+				</radialGradient>
+			</defs>
+		</svg>
+	</div>
+	<div class="frost">
+		<div class="container">
+			<div class="main">SEKHARA PRAMOD</div>
+
+			<div class="opts">
+				<div class="left">COMPUTER SCIENCE &amp; PROGRAMMING</div>
+				<div class="right">WRITING &amp; WORLDBUILDING</div>
+			</div>
+
+			<div class="note">Work in progress</div>
+		</div>
+	</div>
+</div>
+
+<style lang="scss">
+	.background {
+		position: relative;
+		width: 100%;
+		height: 90vh;
+		overflow: hidden;
+	}
+
+	.svgs {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		overflow-y: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: first baseline;
+		gap: 20rem;
+	}
+
+	.frost {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		backdrop-filter: blur(20px);
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 7rem;
+	}
+
+	.main {
+		font-size: 6rem;
+		font-weight: 400;
+		color: white;
+		font-family: Inconsolata, monospace;
+		letter-spacing: 2rem;
+	}
+
+	.opts {
+		display: none;
+		gap: 3rem;
+		flex-direction: column;
+		width: 55vw;
+
+		.left,
+		.right {
+			font-size: 1.5rem;
+			font-weight: 400;
+			color: white;
+			font-family: Inconsolata, monospace;
+			letter-spacing: 0.11rem;
+		}
+
+		.left {
+			text-align: left;
+		}
+
+		.right {
+			text-align: right;
+		}
+	}
+
+	.note {
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: white;
+		font-family: Inconsolata, monospace;
+		letter-spacing: 0.11rem;
+	}
+</style>
